@@ -8,9 +8,7 @@
     <meta name="x5-page-mode" content="app">
   <title>Site Games</title>
   <style>
-    body{ 
-        margin: 25px;
-    }
+
     .cards .cards-row {
         display: flex;
         flex-direction: row;
@@ -18,410 +16,285 @@
     .cards .cards-row .card {
         margin: 10px;
     }
+    /* Font */
+    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+    /* Design */
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    html {
+    background-color: #ecf9ff;
+    }
+
+    body {
+    color: #272727;
+    font-family: 'Quicksand', serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem;
+    }
+
+    .main{
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    }
+
+    .btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    }
+
+    .btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    .cards_item {
+    display: flex;
+    padding: 1rem;
+    }
+
+    @media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+    }
+
+    @media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+    }
+    }
+
+    .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    }
+
+    .card_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    }
+
+    .card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+    }
+
+    .card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+    }
+    .made_by{
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+    }
   </style>
 </head>
 <body>
     <section role="main">
         <div class="cards">
             <div class="cards-row">
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./2048/index.html">2048</a>
                 </div>
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./40963/index.html">40963</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./allalive/index.html">allalive</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./arpg/index.html">arpg</a>
-                </div>-->
-                <!-- Mobile/PC ? 
-                <div class="card">
-                    <a href="./attackonball/index.html">attackonball</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./ballgame/index.html">ballgame</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./bike/index.html">bike</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./blindmoon/index.html">blindmoon</a>
-                </div>-->
-                <!-- Mobile/PC ? 
-                <div class="card">
-                    <a href="./bottle3/index.html">bottle3</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./breaklovers/index.html">breaklovers</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./breakout3/index.html">breakout3</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./candy/index.htm">candy</a>
                 </div>
-                
-                <!-- PC 
-                <div class="card">
-                    <a href="./collectstar/index.html">collectstar</a>
-                </div>-->
             </div>
             <div class="cards-row">
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./candytbc/index.html">candytbc</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./catapult/index.html">catapult</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./charge/index.html">charge</a>
                 </div>
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./circlepath/index.html">circlepath</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./crazybird/index.html">crazybird</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./dinosaur/index.html">dinosaur</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./donottapwhitetile/index.html">donottapwhitetile</a>
-                </div>-->
-                <!--<div class="card">
-                    <a href="./doudizhu/src/client/index.html">doudizhu</a>
-                </div>-->
-                <!-- Mobile -->
+        
                 <div class="card">
                     <a href="./downfloor/index.html">downfloor</a>
                 </div>
-                <!-- Mobile/PC ? 
-                <div class="card">
-                    <a href="./dragandmatch/index.html">dragandmatch</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./eatball/index.html">eatball</a>
                 </div>
-                               
             </div>
             <div class="cards-row">
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./eliminate/index.html">eliminate</a>
-                </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./fctank/index.html">fctank</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./fifty/index.html">fifty</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./findpath/index.html">findpath</a>
-                </div>-->
-                <!-- Mobile -->
+                </div>                
                 <div class="card">
                     <a href="./flappybird/index.html">flappybird</a>
                 </div>
-                <!-- Mobile/PC 
-                <div class="card">
-                    <a href="./flappybird3/index.html">flappybird3</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./fruit/index.html">fruit</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./fruitwar/index.html">fruitwar</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./fubag/index.html">fubag</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./getcockscomb/index.html">getcockscomb</a>
                 </div> 
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./getcoins3/index.html">getcoins3</a>
                 </div>
-                
-                <!--<div class="card">
-                    <a href="./learn/exam1.html">learn</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./learn3/index.html">learn3</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./legendofwolf/index.html">legendofwolf</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./lottery/index.html">lottery</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./magicplain/index.html">magicplain</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./manna/index.html">manna</a>
-                </div>-->
             </div>
             <div class="cards-row">
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./getthestarforyou/index.html">getthestarforyou</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./hearthstone/index.html">hearthstone</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./hitball/index.html">hitball</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./hitgraywolf3/index.html">hitgraywolf3</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./jokingyou/index.html">jokingyou</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./jump/index.html">jump</a>
                 </div>
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./jumpone/index.html">jumpone</a>
                 </div>
-                <!--<div class="card">
-                    <a href="./justshoot/dist/index.html">justshoot</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./kite/index.html">kite</a>
                 </div>
-                              
             </div>
             <div class="cards-row">
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./knifehit3/index.html">knifehit3</a>
                 </div>
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./kupao/index.html">kupao</a>
                 </div>
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./marathon/index.html">marathon</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./maze/index.html">maze</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./memory/index.html">memory</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./minorminer/index.html">minorminer</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./mota/index.html">mota</a>
-                </div>-->
-                <!-- Mobile/PC ? 
-                <div class="card">
-                    <a href="./nail/index.html">nail</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./p2ball/index.html">p2ball</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./pacman/index.html">pacman</a>
-                </div>-->
-                <!--<div class="card">
-                    <a href="./partials/weiduan/duans/">pacman</a>
-                </div>-->
-                
             </div>
             <div class="cards-row">
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./petparty/index.html">petparty</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./pixelstar/index.html">pixelstar</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./plane/index.html">plane</a>
                 </div>
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./planewar/index.html">planewar</a>
                 </div>
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./prize/index.html">prize</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./puzzle/index.html">puzzle</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./quickrush3/index.html">quickrush3</a>
                 </div>
-                
-                <!-- Mobile/PC 
-                <div class="card">
-                    <a href="./shoot/index.html">shoot</a>
-                </div>-->
-                <!-- Mobile/PC 
-                <div class="card">
-                    <a href="./simplechess/index.html">simplechess</a>
-                </div>-->
-                <!-- Mobile/PC 
-                <div class="card">
-                    <a href="./skeletonguard/index.html">skeletonguard</a>
-                </div>-->
-                <!-- Mobile/PC 
-                <div class="card">
-                    <a href="./snap/index.html">snap</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./stardog/index.html">stardog</a>
-                </div>-->
-                <!-- Mobile/PC 
-                <div class="card">
-                    <a href="./starship/index.html">starship</a>
-                </div>-->
-                <!-- Mobile/PC 
-                <div class="card">
-                    <a href="./susliks/index.html">susliks</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./swordart/index.html">swordart</a>
-                </div>-->                
-                <!-- PC 
-                <div class="card">
-                    <a href="./unforgetday/index.html">unforgetday</a>
-                </div>-->
-                <!-- Com erro
-                <div class="card">
-                    <a href="./weiduan/index.html">weiduan</a>
-                </div>-->
-                <!-- Mobile/PC 
-                <div class="card">
-                    <a href="./wipeglass/index.html">wipeglass</a>
-                </div>  -->              
             </div>
             <div class="cards-row">
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./quitsmoke/index.html">quitsmoke</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./randomdungeon/index.html">randomdungeon</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./rhythm/index.html">rhythm</a>
                 </div>  
-                <!-- Mobile/PC ? 
-                <div class="card">
-                    <a href="./rocket/index.html">rocket</a>
-                </div>-->
-                <!-- Mobile/PC ? 
-                <div class="card">
-                    <a href="./rpgdemo/index.html">rpgdemo</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./run/index.html">run</a>
                 </div>
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./runrobot/index.html">runrobot</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./russianblock/index.html">russianblock</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./scaldfish/index.html">scaldfish</a>
-                </div>-->
-                <!-- PC 
-                <div class="card">
-                    <a href="./seckill/index.html">seckill</a>
-                </div>-->
-                <!--<div class="card">
-                    <a href="./services/">pacman</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./shenjingmao/index.html">shenjingmao</a>
                 </div>
             </div>
             <div class="cards-row">
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./tacit/index.html">tacit</a>
                 </div>
-                <!-- PC 
-                <div class="card">
-                    <a href="./tank/index.html">tank</a>
-                </div>-->
-                <!--<div class="card">
-                    <a href="./timberpig/">pacman</a>
-                </div>-->
-                <!--<div class="card">
-                    <a href="./tools/">pacman</a>
-                </div>-->
-                <!-- Mobile -->
                 <div class="card">
                     <a href="./twowar/index.html">twowar</a>
                 </div>
             </div>
+        </div>
+    </section>
+    <section role="main">
+        <div class="main">
+            <h1>Responsive Card Grid Layout</h1>
+            <ul class="cards">
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./tacit/index.html'">Play tacit</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./twowar/index.html'">Play twowar</button>
+                        </div>
+                    </div>
+                </li>                
+            </ul>
         </div>
     </section>
 </body>

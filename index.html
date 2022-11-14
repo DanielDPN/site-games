@@ -8,14 +8,6 @@
     <meta name="x5-page-mode" content="app">
   <title>Site Games</title>
   <style>
-
-    .cards .cards-row {
-        display: flex;
-        flex-direction: row;
-    }
-    .cards .cards-row .card {
-        margin: 10px;
-    }
     /* Font */
     @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
@@ -23,25 +15,25 @@
     *,
     *::before,
     *::after {
-    box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     html {
-    background-color: #ecf9ff;
+        background-color: #ecf9ff;
     }
 
     body {
-    color: #272727;
-    font-family: 'Quicksand', serif;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0;
-    padding: 1rem;
+        color: #272727;
+        font-family: 'Quicksand', serif;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0;
+        padding: 1rem;
     }
 
     .main{
-    max-width: 1200px;
-    margin: 0 auto;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     h1 {
@@ -51,229 +43,446 @@
     }
 
     img {
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
     }
 
     .btn {
-    color: #ffffff;
-    padding: 0.8rem;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 4px;
-    font-weight: 400;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: transparent;
+        color: #ffffff;
+        padding: 0.8rem;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
     }
 
     .btn:hover {
-    background-color: rgba(255, 255, 255, 0.12);
+        background-color: rgba(255, 255, 255, 0.12);
     }
 
     .cards {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
     .cards_item {
-    display: flex;
-    padding: 1rem;
+        display: flex;
+        padding: 1rem;
+        
     }
 
-    @media (min-width: 40rem) {
-    .cards_item {
-        width: 50%;
-    }
-    }
-
-    @media (min-width: 56rem) {
-    .cards_item {
-        width: 33.3333%;
-    }
+    @media (max-width: 699px) {
+        .cards_item {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
     }
 
     .card {
-    background-color: white;
-    border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+        background-color: white;
+        border-radius: 0.25rem;
+        box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
 
     .card_content {
-    padding: 1rem;
-    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+        padding: 1rem;
+        background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
     }
 
     .card_title {
-    color: #ffffff;
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    margin: 0px;
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin: 0px;
     }
 
     .card_text {
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    margin-bottom: 1.25rem;    
-    font-weight: 400;
+        color: #ffffff;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin-bottom: 1.25rem;    
+        font-weight: 400;
     }
     .made_by{
-    font-weight: 400;
-    font-size: 13px;
-    margin-top: 35px;
-    text-align: center;
+        font-weight: 400;
+        font-size: 13px;
+        margin-top: 35px;
+        text-align: center;
     }
   </style>
 </head>
 <body>
     <section role="main">
-        <div class="cards">
-            <div class="cards-row">
-                <div class="card">
-                    <a href="./2048/index.html">2048</a>
-                </div>
-                <div class="card">
-                    <a href="./40963/index.html">40963</a>
-                </div>
-                <div class="card">
-                    <a href="./bike/index.html">bike</a>
-                </div>
-                <div class="card">
-                    <a href="./breaklovers/index.html">breaklovers</a>
-                </div>
-                <div class="card">
-                    <a href="./candy/index.htm">candy</a>
-                </div>
-            </div>
-            <div class="cards-row">
-                <div class="card">
-                    <a href="./candytbc/index.html">candytbc</a>
-                </div>
-                <div class="card">
-                    <a href="./charge/index.html">charge</a>
-                </div>
-                <div class="card">
-                    <a href="./circlepath/index.html">circlepath</a>
-                </div>
-        
-                <div class="card">
-                    <a href="./downfloor/index.html">downfloor</a>
-                </div>
-                <div class="card">
-                    <a href="./eatball/index.html">eatball</a>
-                </div>
-            </div>
-            <div class="cards-row">
-                <div class="card">
-                    <a href="./eliminate/index.html">eliminate</a>
-                </div>                
-                <div class="card">
-                    <a href="./flappybird/index.html">flappybird</a>
-                </div>
-                <div class="card">
-                    <a href="./fruitwar/index.html">fruitwar</a>
-                </div>
-                <div class="card">
-                    <a href="./getcockscomb/index.html">getcockscomb</a>
-                </div> 
-                <div class="card">
-                    <a href="./getcoins3/index.html">getcoins3</a>
-                </div>
-            </div>
-            <div class="cards-row">
-                <div class="card">
-                    <a href="./getthestarforyou/index.html">getthestarforyou</a>
-                </div>
-                <div class="card">
-                    <a href="./hitgraywolf3/index.html">hitgraywolf3</a>
-                </div>
-                <div class="card">
-                    <a href="./jump/index.html">jump</a>
-                </div>
-                <div class="card">
-                    <a href="./jumpone/index.html">jumpone</a>
-                </div>
-                <div class="card">
-                    <a href="./kite/index.html">kite</a>
-                </div>
-            </div>
-            <div class="cards-row">
-                <div class="card">
-                    <a href="./knifehit3/index.html">knifehit3</a>
-                </div>
-                <div class="card">
-                    <a href="./kupao/index.html">kupao</a>
-                </div>
-                <div class="card">
-                    <a href="./marathon/index.html">marathon</a>
-                </div>
-                <div class="card">
-                    <a href="./memory/index.html">memory</a>
-                </div>
-                <div class="card">
-                    <a href="./p2ball/index.html">p2ball</a>
-                </div>
-            </div>
-            <div class="cards-row">
-                <div class="card">
-                    <a href="./petparty/index.html">petparty</a>
-                </div>
-                <div class="card">
-                    <a href="./plane/index.html">plane</a>
-                </div>
-                <div class="card">
-                    <a href="./planewar/index.html">planewar</a>
-                </div>
-                <div class="card">
-                    <a href="./prize/index.html">prize</a>
-                </div>
-                <div class="card">
-                    <a href="./quickrush3/index.html">quickrush3</a>
-                </div>
-            </div>
-            <div class="cards-row">
-                <div class="card">
-                    <a href="./quitsmoke/index.html">quitsmoke</a>
-                </div>
-                <div class="card">
-                    <a href="./rhythm/index.html">rhythm</a>
-                </div>  
-                <div class="card">
-                    <a href="./run/index.html">run</a>
-                </div>
-                <div class="card">
-                    <a href="./runrobot/index.html">runrobot</a>
-                </div>
-                <div class="card">
-                    <a href="./shenjingmao/index.html">shenjingmao</a>
-                </div>
-            </div>
-            <div class="cards-row">
-                <div class="card">
-                    <a href="./tacit/index.html">tacit</a>
-                </div>
-                <div class="card">
-                    <a href="./twowar/index.html">twowar</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section role="main">
         <div class="main">
-            <h1>Responsive Card Grid Layout</h1>
+            <h1>Site Games</h1>
             <ul class="cards">
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./2048/index.html'">Play 2048</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./40963/index.html'">Play 40963</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./bike/index.html'">Play bike</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./breaklovers/index.html'">Play breaklovers</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./candy/index.html'">Play candy</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./candytbc/index.html'">Play candytbc</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./charge/index.html'">Play charge</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./circlepath/index.html'">Play circlepath</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./downfloor/index.html'">Play downfloor</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./eatball/index.html'">Play eatball</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./eliminate/index.html'">Play eliminate</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./flappybird/index.html'">Play flappybird</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./fruitwar/index.html'">Play fruitwar</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./getcockscomb/index.html'">Play getcockscomb</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./getcoins3/index.html'">Play getcoins3</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./getthestarforyou/index.html'">Play getthestarforyou</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./hitgraywolf3/index.html'">Play hitgraywolf3</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./jump/index.html'">Play jump</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./jumpone/index.html'">Play jumpone</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./kite/index.html'">Play kite</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./knifehit3/index.html'">Play knifehit3</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./kupao/index.html'">Play kupao</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./marathon/index.html'">Play marathon</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./memory/index.html'">Play memory</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./p2ball/index.html'">Play p2ball</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./petparty/index.html'">Play petparty</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./plane/index.html'">Play plane</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./planewar/index.html'">Play planewar</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./prize/index.html'">Play prize</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./quickrush3/index.html'">Play quickrush3</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./quitsmoke/index.html'">Play quitsmoke</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./rhythm/index.html'">Play rhythm</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./run/index.html'">Play run</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./runrobot/index.html'">Play runrobot</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="https://picsum.photos/500/300/?image=10">
+                        </div>
+                        <div class="card_content">
+                            <button class="btn card_btn" onclick="location.href='./shenjingmao/index.html'">Play shenjingmao</button>
+                        </div>
+                    </div>
+                </li>
                 <li class="cards_item">
                     <div class="card">
                         <div class="card_image">
